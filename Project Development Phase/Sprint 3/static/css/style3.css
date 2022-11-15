@@ -1,0 +1,109 @@
+
+                                            /* navigation bar section */
+.navbar{
+    background-color: #282a35;
+    height: 80px;
+    
+}
+.navbar-brand{
+    padding-top: 15px;
+    margin-left: 350px; 
+    color: white;
+    font-size: 32px;
+   
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-nav{
+    margin-right:80px;
+    /* background-color: white; */
+}
+.nav-item{
+    margin: 10px;
+    border: gold solid 2px ; 
+    padding: 0px 20px;
+}
+.nva{
+    background-color: gold;
+}
+.nvia:hover{
+    background-color: yellow;
+    color: black;
+}
+.nl-inactive{
+    color: white;
+}
+
+
+/* checkEligibility.html section */
+
+.sec-1{
+    /* background-color: rgb(126, 252, 0); */
+    padding: 20px 0;
+}
+
+
+.con-1{
+    /* background-color: rgb(128, 128, 128); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-head{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:rgb(219, 219, 219) ;
+    box-shadow: 0 4px 8px 0 rgb(100, 100, 98), 0px 10px 20px 5px rgb(180, 180, 177); 
+    padding-bottom: 20px;
+}
+
+
+.hr-dec{
+    border: black solid 1px;
+}
+.row:hover:not(.row-br){
+    border: rgba(0, 0, 0, 0.555) solid 1px;
+    border-radius: 10px;
+    background-color: #404455;
+    color: white; 
+}
+.col{
+    /* border: red solid 3px; */
+    padding: 10px 20px;
+}
+
+.inpBox span{
+    font-size: 20px;
+    /* background-color: aqua; */
+    padding: 5px 10px;
+   
+}
+.inpBox input{
+    outline: none;
+    border: white solid 1px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 1px 2px 10px #888888;
+
+}
+
+.col-sub{
+    margin-right: 100px;
+}
+.col-res{
+    margin-left: 80px;
+}
+/* footer section */
+.foot-span{
+    color:white;
+}

@@ -1,0 +1,145 @@
+                                            /* navigation bar section */
+.navbar{
+    background-color: #282a35;
+    height: 80px;
+}
+.navbar-brand{
+    padding-top: 15px;
+    padding-left: 30px;
+    color: white;
+    font-size: 32px;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-nav{
+    margin-right:80px;
+    /* background-color: white; */
+}
+.nav-item{
+    margin: 10px;
+     border: yellow solid 2px ; 
+    padding: 0px 20px;
+}
+.nva{
+    background-color: yellow;
+}
+.nvia:hover{
+    background-color: yellow;
+    color: black;
+}
+.nl-inactive{
+    color: white;
+}
+
+                                          /* home2.html - login form */
+.divider:after,.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+form-outline-p{
+    background-color: aqua;
+}
+
+.nav-p{
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* .container{
+    background-color: yellow;
+
+}
+.card-1{
+    background-color: pink;
+} */
+
+
+.card-2-reg{
+     background-color: rgba(211, 211, 211, 0.705); 
+    margin-left: 30px;
+    padding: 30px 30px;
+    
+    border: black solid 3px;
+    border-radius: 50px;
+}
+.card-2-home{
+    background-color: rgba(211, 211, 211, 0.705); 
+   margin-left: 30px;
+   padding: 30px 50px;
+   
+   border: black solid 3px;
+   border-radius: 50px;
+}
+.card-2:hover{
+    /* box-shadow: 0 4px 8px 0 rgb(255, 255, 254), 0 10px 40px 0 rgb(180, 180, 177); */
+    background-color:rgb(219, 219, 219); 
+    /* box-shadow: 0 4px 8px 0 rgb(76, 72, 72), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+
+/* form section */
+.inputBox{
+    position : relative;
+    width: 360px;
+}
+
+.inputBox input
+{
+ width: 100%;
+ padding: 10px;
+ border: 1px solid black;
+ background: white;
+ border-radius: 5px;
+ outline: none;
+ color: black;
+ font-size: 1em;
+ transition: 0.5s;
+}
+.inputBox span
+{
+    position: absolute;
+    left:0;
+    padding:10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.603);
+    /* font-weight: bold; */
+
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: white;
+    transform: translateX(20px) translateY(-7px);
+    font-size:0.65em;
+    padding: 0 10px;
+    background: black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    letter-spacing: 0.2em;
+}
+
+
+
+
+.div-facebook{
+    /* background-color: white; */
+    padding-left: 60px;
+}
+
+
+
+
+/* footer section */
+.foot-span{
+    color:white;
+}

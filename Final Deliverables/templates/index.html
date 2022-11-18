@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <title>University Admit Eligibility Predictor</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Spectral&display=swap');
+
+        body{
+            font-family: 'Spectral', serif;
+            background-image : url("{{url_for('static',filename='img/check_front.jpg')}}");
+            /* background-color: lightgray; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            position: relative;
+        }
+        /* ---------------------------index.html section------------------------ */
+        .navbar{
+            background-color: #282a35;
+        }
+        .navbar-brand{
+            margin-left: 30px;
+        }
+        .navbar-brand span{
+            font-family: 'Oleo Script', cursive;
+            font-size: 30px;
+            color: white;
+            margin-left: 10px;
+        }
+        .navbar-brand img{
+            border-radius: 7px;
+            margin-top: -4px;
+        }
+        .navbar-nav{
+            margin-right: 100px;
+            width: 150px;
+            height: 45px;
+        }
+        .nav-item{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 16px;
+            width: 100px;
+        }
+        .nav-item a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+        }
+        .nva{
+          border: yellow solid 2px;
+          color: white;
+        }
+        .nva:hover{
+            border: yellow solid 2px;
+            background-color: yellow;
+            color: black;
+        }
+        /* --------------------------------predictor.html section--------------------- */
+        .row-sec{
+             /* background-color: aqua;  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-sec{
+            background-color: rgba(255, 255, 255, 0.212);
+            border: white solid 3px;
+        }
+        .card-sec:hover{
+            background-color: whitesmoke;
+            border: black solid 3px;
+        }
+        .card-title{
+            font-size:24px;
+            font-weight: bold;
+        }
+        .row label{
+            font-size: 18px;
+        }
+        .form-check-label{
+            margin-left: -50px;
+        }
+        .row:not(.row-btn,.row-sec){
+            border: rgba(255, 255, 255, 0.11) solid 1px;
+            border-radius: 5px;
+            padding: 10px 0px;
+        }
+        .row:hover:not(.row-btn,.row-sec){
+            border:black solid 1px;
+            background-color: #282a35;
+            color: white;
+        }
+        .row-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .btn-res{
+            background-color: #ff7400;
+            border: #ff7400 solid 1px;
+            margin-left: -25px;
+        }
+        .btn-res:hover{
+            background-color: red;
+            border: red solid 1px;
+        }
+        .btn-sub:hover{
+            background-color: black;
+        }
+        .hor-line{
+            margin-top: -10px;
+            border-top: black solid 2px;
+        }
+        .col-load{
+            margin-left: 40px;
+        }
+        /* ----------------------------------------eligible.html------------------------------------- */
+        .card-eligible{
+            /* background-color: rgb(218, 214, 214); */
+            border: white solid 2px;
+        }
+        .card-eligible:hover{
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.685),0 17px 50px 0 rgba(0, 0, 0, 0.486);
+            border: black solid 2px;
+        }
+        .card-body:not(.card-pred){
+            background-color: black;
+            color: white;
+        }
+        .card-body:hover:not(.card-pred){
+            color: gold;
+        } 
+        .card-img-top{
+            margin-top: 30px;
+            width: 300px;
+            height: 300px;
+            margin-left: 130px;
+            margin-bottom: 20px;
+        }
+        /* ------------------------------------footer section--------------------------------------- */
+        footer{
+            margin-bottom: 0;
+            margin-left: -100px;
+            margin-right: 0px;
+        }
+        .foot-span{
+            color:white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-responsive-h" href="/">
+                <img src="..\static\img\logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top ">
+                <span>University Admit Eligibility Predictor</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item nva">
+                  <a class="nav-link nl-active" href="/home">Home</a>
+                </li>
+              </ul>
+        </div>
+    </nav>
+
+    {% block body %}
+    <h1> Index Page </h1>
+    {% endblock %}
+
+</body>
+    <footer class="text-center text-lg-start ">
+        <div class="text-center p-3" style="background-color: #191a1f">
+          <span class="foot-span">©2022 Copyright: PNT2022TMID32265</span> 
+        </div>
+    </footer>
+</html>

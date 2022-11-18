@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<div class="container text-center p-4">
+    <div class="d-flex justify-content-center">
+        <div class="card card-eligible" style="width: 34rem;">
+            <img src="..\static\img\chance1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Congratulations...! You Have Chance</h5>
+                <p class="card-text">The model has predicted that you have <strong>{{content[0]}}%</strong> chance</p>
+                <a href="/home" class="btn btn-primary">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
